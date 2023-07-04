@@ -1,0 +1,653 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quando&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+
+
+/*------------nav-----------*/
+
+
+
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+.head1
+{
+color: #ffffff;
+font-size: 2.2rem;
+font-family: 'Poppins', sans-serif;
+}
+.head2
+{
+color: #f35a48;
+font-size: 2.2rem;
+font-family: 'Poppins', sans-serif;
+}
+nav
+{
+    background-color: #3d3d38;
+    margin-left: 140px;
+    margin-right: 170px;
+    height: 90px;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    z-index: 1;
+}
+nav ul
+{
+    list-style-type: none;
+    display: flex;
+    margin-left: 250px;
+}
+nav ul li
+{
+    font-size: 1.3rem;
+    padding-left: 30px;
+}
+nav ul li a
+{
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    display: block;
+    position: relative;
+
+}
+nav ul li a::after
+{
+    content: "";
+    width:0%;
+    height: 2px;
+    position: absolute;
+    background: red;
+    left: 0px;
+    bottom: -5px;
+    transition: 1s;
+}
+nav ul li a:hover::after
+{
+    width:100%
+}
+.button1
+{
+    border-color: red;
+    height: 45px;
+    width: 140px;
+    background-color: #4c4c4c;
+    margin-left: 172px;
+    transition: 2s;
+}
+.button1 a
+{
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    transition: 2s;
+}
+.button1:hover
+{
+    cursor: pointer;
+    transform: scale(0.8);
+}
+.button1 a:hover
+{
+    cursor: pointer;
+    transform: scale(0.8);
+}
+
+
+/*--------------home---------------*/
+
+
+
+.home
+{
+    height: 450px;
+    width: 100%;
+    background-image: url("../about images/img1.jpg");
+    background-size: 100% 450px;
+    background-repeat: no-repeat;
+}
+.overlay
+{
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    opacity: 0.5;
+}
+.heading1
+{
+    color: #fff;
+    font-size: 4rem;
+    font-family: 'Quando', serif;
+    position: relative;
+    bottom: 240px;
+    margin-left: 620px;
+}
+.back
+{
+    position: relative;
+    bottom: 225px;
+    margin-left: 670px;
+}
+.back a
+{
+    text-decoration: none;
+    color: #fff;
+    font-size: 22px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+}
+.back img
+{
+    height: 18px;
+    width: 18px;
+    background-color: #fff;
+    border-radius: 8px;
+    position: relative;
+    top: 1px;
+}
+.back h6
+{
+    position: relative;
+    bottom: 26px;
+    margin-left: 110px;
+    font-size: 22px;
+    font-weight: normal;
+    font-family: 'Poppins', sans-serif;
+    color: #c0cfc4;
+}
+
+
+
+/*--------class timetable-----------*/
+
+
+.timetable_head
+{
+    font-size: 2.5rem;
+    font-family: 'Shrikhand', cursive;
+    color: #000;
+    text-align: center;
+    margin-top: 75px;
+}
+#ul
+{
+    display: flex;
+    flex-direction: row;
+    margin-left: 280px;
+    list-style-type: none;
+    margin-top: 50px;
+    position: sticky;
+    top: 20px;
+    z-index: 1;
+}
+#ul li a
+{
+    color: #000;
+    padding-left: 50px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+#ul li a:hover
+{
+    cursor: pointer;
+    color: red;
+}
+.timetable
+{
+    height: 100vh;
+    width: 1300px;
+    margin-left: 125px;
+    overflow: auto;
+    scroll-behavior: smooth;
+}
+table
+{
+    margin-top: 10px;
+    width: 100%;
+    height: 700px;
+    border: 2px solid #dfe2e6;
+    border-collapse: collapse;
+}
+td
+{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    height: 70px;
+    width: 30px;
+    font-weight: bold;
+    border: 1px solid #dfe2e6;
+}
+thead
+{
+    background-color: #dfe2e6;
+    height: 75px;
+}
+table h3
+{
+    color: red;
+    position: relative;
+    font-family: 'Lobster', cursive;
+    bottom: 15px;
+}
+table h4
+{
+    font-size: 17px;
+    position: relative;
+    font-weight: normal;
+    bottom: 5px;
+}
+table h5
+{
+    font-size: 18px;
+    color: #8c8e8f;
+    font-family: 'Lobster', cursive;
+    font-weight: normal;
+    position: relative;
+    top: 5px;
+}
+.time
+{
+    font-size: 20px;
+    font-weight: normal;
+}
+.highlight:hover
+{
+    cursor: pointer;
+    background-image: linear-gradient(45deg,#eb3d59,#ee4f4d,#f67633,#f67633,orange);
+    color: #fff;
+}
+table h3:hover
+{
+    color: #fff;
+}
+table h5:hover
+{
+    color: #fff;
+}
+
+
+/*-----------------classes--------------*/
+
+
+
+#main
+{
+    height: 1200px;
+    width: 90%;
+    margin-top: 100px;
+    margin-left: 7%;
+}
+#main h1
+{
+    margin-left: 450px;
+    font-size: 2.2rem;
+    font-family: 'Shrikhand', cursive;
+}
+.main_div1
+{
+    display: flex;
+    flex-direction: row;
+}
+.main_div2
+{
+    display: flex;
+    flex-direction: row;
+}
+.main_div3
+{
+    display: flex;
+    flex-direction: row;
+}
+.class
+{
+    margin-left: 25px;
+    margin-top: 25px;
+    transition: 1s;
+}
+.class:hover
+{
+    transform: scale(1.1);
+}
+.clas
+{
+    margin-left: 25px;
+    position: relative;
+    bottom: 120px;
+    transition: 1s;
+}
+.cla
+{
+    margin-left: 25px;
+    position: relative;
+    bottom: 230px;
+    transition: 1s;
+}
+.clas:hover
+{
+    transform: scale(1.1);
+}
+.cla:hover
+{
+    transform: scale(1.1);
+}
+.class1 img
+{
+    height: 325px;
+    width: 400px;
+}
+.class2
+{
+    position: relative;
+    bottom: 190px;
+    left: 30px;
+}
+.class2 h2
+{
+    font-size: 1.8rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    color: #fff;
+}
+.class2 img
+{
+    height: 25px;
+    width: 25px;
+    margin-top: 5px;
+}
+.class2 h4
+{
+    font-size: 1.2rem;
+    color: #fff;
+    font-family: 'Lobster', cursive;
+    position: relative;
+    font-weight: normal;
+    bottom: 28px;
+    left: 40px;
+}
+.overlay1
+{
+    height: 100px;
+    width: 400px;
+    background-color: #000;
+    opacity: 0.5;
+    position: relative;
+    bottom: 104px;
+}
+
+
+/*---------------form---------------*/
+
+
+#form
+{
+    clear: both;
+    margin-top: 100px;
+    background-color: #f1f0f0;
+    height: 700px;
+    width: 100%;
+}
+.form1
+{
+    background-color: #fff;
+    height: 500px;
+    width: 70%;
+    margin-top: 100px;
+    margin-left: 250px;
+    display: flex;
+    flex-direction: row;
+}
+.form2
+{
+    height: 500px;
+    width: 70%;
+}
+.form2 h1
+{
+    text-align: center;
+    margin-top: 25px;
+    font-size: 2rem;
+    
+    font-family: 'Shrikhand', cursive;
+}
+.form2 p
+{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+    font-family: 'Lobster', cursive;
+}
+.form3
+{
+    margin-top: 2px;
+    height: 500px;
+    width: 30%;
+}
+#form .table
+{
+    border: 2px solid;
+    margin-top: 20px;
+    margin-left: 80px;
+    width: 80%;
+    height: 300px;
+    border: none;
+}
+#form td
+{
+    border: 1px solid;
+    border-color: black;
+    border: none;
+}
+#form .table .form_data
+{
+    position: relative;
+    top: 10px;
+    color: #b2b4b6;
+}
+#form input[type="text"]
+{
+    height: 40px;
+    width: 93%;
+    border: ridge;
+    padding-left: 15px;
+}
+#form tr td input[type="email"]
+{
+    height: 40px;
+    width: 94%;
+    border: ridge;
+    padding-left: 15px;
+}
+#form input[type="number"]
+{
+    height: 40px;
+    width: 94%;
+    border: ridge;
+    padding-left: 15px;
+}
+#form .table button
+{
+    height: 40px;
+    width: 100%;
+    font-size: 1rem;
+    border: none;
+    background-image: linear-gradient(90deg,#eb3d59,#ed4654,#ee4f4d,#f67633,#f67633,#f67633,#f67633,orange);
+}
+#form .table button a
+{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+}
+.form3 img
+{
+    height: 500px;
+    width: 100%;
+    margin-top: -2px;
+    transition: 1s;
+}
+.form3 img:hover
+{
+    transform: scale(0.95);
+}
+#form input[type="text"]:hover
+{
+    border: none;
+}
+#form tr td input[type="email"]:hover
+{
+    border: none;
+}
+#form input[type="number"]:hover
+{
+    border: none;
+}
+
+
+/*-----------footer--------------*/
+
+
+#main_footer
+{
+    height: 500px;
+    width: 100%;
+    background-color: black;
+}
+.foot_contact
+{
+    display: flex;
+    flex-direction: row;
+}
+.contact1
+{
+    width: 33%;
+    height: 170px;
+}
+.foot_contact h3
+{
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 110px;
+}
+.foot_contact h4
+{
+    margin-left: 110px;
+    margin-top: 70px;
+    color: red;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+.foot_img img
+{
+    height: 175px;
+    width: 85%;
+    margin-left: 110px;
+}
+.foot_img h2
+{
+    position: relative;
+    bottom: 130px;
+    margin-left: 160px;
+    font-size: 1.6rem;
+}
+.foot_img h5
+{
+    position: relative;
+    bottom: 120px;
+    margin-left: 160px;
+    font-size: 1.2rem;
+}
+.foot_mail
+{
+    position: relative;
+    bottom: 175px;
+    margin-left: 900px;
+}
+.foot_mail input[type="email"]
+{
+    width: 300px;
+    height: 45px;
+    padding-left: 15px;
+}
+.foot_mail input[type="email"]:hover
+{
+    cursor: pointer;
+    padding-left: 15px;
+    border: none;
+}
+.foot_mail button
+{
+    position: relative;
+    top: 1px;
+    right: 5px;
+    height: 48px;
+    width: 110px;
+    background-image: linear-gradient(90deg,yellow,#f57135,#ec4356);
+    border: none;
+}
+.foot_mail button:hover
+{
+    cursor: pointer;
+}
+.foot_mail a
+{
+    color: #fff;
+    font-size: 1.1rem;
+    text-decoration: none   ;
+}
+.footer_last
+{
+    position: relative;
+    bottom: 40px;
+    display: flex;
+    flex-direction: row;
+}
+.footer_last p
+{
+    color: #fff;
+    margin-left: 100px;
+    font-size: 18px;
+}
+.footer_last h5 a
+{
+    color: #fff;
+    font-size: 20px;
+    margin-left: 80px;
+}
+.footer_last h5 a:hover
+{
+    cursor: pointer;
+}
+.footer_last1
+{
+    margin-left: 100px;
+    position: relative;
+    bottom: 17px;
+}
+.footer_last1 img
+{
+    background-color: #fff;
+    padding: 15px;
+    height: 25px;
+    margin-left: 20px;
+    width: 25px;
+    border-radius: 30px;
+    transition: 1s;
+}
+.footer_last1 img:hover
+{
+    cursor: pointer;
+    background-color: #f2d116;
+    transform: scale(0.9);
+    border-radius: 30px;
+}
