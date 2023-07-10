@@ -101,6 +101,61 @@ nav ul li a:hover::after
 }
 
 
+
+@media all and (max-width:600px)
+{
+    nav
+    {
+        display: flex;
+        flex-direction: column;
+        background-color: #3d3d38;
+        margin-left: 7.5%;
+        height: 450px;
+        width: 85%;
+    }
+    nav ul
+    {
+        display: flex;
+        flex-direction: column;
+        line-height: 55px;
+        margin-right: 600px;
+    }
+    .head1
+    {
+       position: relative;
+       left: -195px;
+       top: 25px;
+    }
+    .head2
+    {
+        position: relative;
+        bottom: 25px;
+        right: 130px;
+    }
+    .button1
+    {
+        position: relative;
+        bottom: 400px;
+        left: 40px;
+    }
+    nav ul li a::after
+    {
+        content: "";
+        width:0%;
+        height: 2px;
+        position: absolute;
+        background: red;
+        left: 0px;
+        bottom: 5px;
+        transition: 1s;
+    }
+    nav ul li a:hover::after
+    {
+    width:100%;
+    }
+}
+
+
 /*--------------home---------------*/
 
 
@@ -155,12 +210,46 @@ nav ul li a:hover::after
 .back h6
 {
     position: relative;
-    bottom: 26px;
-    margin-left: 110px;
+    bottom: 32px;
+    margin-left: 115px;
     font-size: 22px;
     font-family: 'Poppins', sans-serif;
     font-weight: normal;
     color: #c0cfc4;
+}
+
+@media all and (max-width:600px)
+{
+    .home
+    {
+        height: 900px;
+        width: 100%;
+        background-image: url("../images/img1.jpg");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    .overlay
+    {
+        height: 100%;
+        width: 100%;
+        background-color: #000;
+        opacity: 0.5;
+    }
+    .heading1
+    {
+        color: #fff;
+        font-size: 3rem;
+        font-family: 'Quando', serif;
+        position: relative;
+        bottom: 300px;
+        margin-left: 180px;
+    }
+    .back
+    {
+        position: relative;
+        bottom: 280px;
+        margin-left: 175px;
+    }
 }
 
 
@@ -314,6 +403,45 @@ nav ul li a:hover::after
     color: brown;
 }
 
+@media all and (max-width:600px)
+{
+    #blog
+    {
+        height: 1800px;
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 0px;
+        display: flex;
+        flex-direction: column;
+    }
+    .blog1 img
+    {
+        height: 350px;
+        width: 100%;
+        border-radius: 20px;
+        transition: 1s;
+    }
+    .blog1
+    {
+        height: 600px;
+        width: 90%;
+        margin-left: 5%;
+    }
+    .blog3
+    {
+        height: 600px;
+        width: 90%;
+        margin-left: 5%;
+    }
+    .blog2
+    {
+        height: 600px;
+        width: 90%;
+        margin-left: 5%;
+    }
+    
+}
+
 
 /*-----------footer--------------*/
 
@@ -458,4 +586,113 @@ nav ul li a:hover::after
     background-color: #f2d116;
     transform: scale(0.9);
     border-radius: 30px;
+}
+@media all and (max-width:600px)
+{
+#main_footer
+{
+    height: 1300px;
+    width: 100%;
+    background-color: black;
+}
+.foot_contact
+{
+    margin-top: 0px;
+    width: 100%;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+}
+.contact1
+{
+    margin-top: -20px;
+    width: 100%;
+    height: 170px;
+}
+.foot_contact h3
+{
+    color: #fff;
+    font-size: 20px;
+    font-weight: normal;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 20px;
+}
+.foot_contact h4
+{
+    margin-left: 20px;
+    margin-top: 60px;
+    font-family: 'Poppins', sans-serif;
+    color: red;
+    font-size: 18px;
+}
+.foot_img
+{
+    margin-top: -40px;
+}
+.foot_img img
+{
+    height: 300px;
+    width: 95%;
+    margin-left: 2.5%;
+}
+.foot_img h2
+{
+    position: relative;
+    bottom: 260px;
+    margin-left: 60px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem;
+}
+.foot_img h5
+{
+    position: relative;
+    bottom: 250px;
+    margin-left: 60px;
+    font-size: 1.1rem;
+    font-family: 'Poppins', sans-serif;
+}
+.foot_mail
+{
+    position: relative;
+    bottom: 190px;
+    margin-left: 60px;
+}
+.footer_last p
+{
+    color: #fff;
+    margin-left: 0px;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 18px;
+}
+.footer_last
+{
+    position: relative;
+    bottom: 40px;
+    display: flex;
+    flex-direction: column;
+}
+.footer_last h5 a
+{
+    color: #fff;
+    font-size: 20px;
+    align-items: center;
+    /*margin-left: 50px;*/
+    line-height: 80px;
+}
+.footer_last1
+{
+    margin-left: 50px;
+    margin-top: 80px;
+    
+}
+.footer_last1 a
+{
+    padding-left: 25px;
+}
+.footer_media
+{
+    display: flex;
+    flex-direction: row;
+}
 }

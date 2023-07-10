@@ -124,12 +124,13 @@ nav ul li a:hover::after
     {
        position: relative;
        left: -195px;
+       top: 25px;
     }
     .head2
     {
         position: relative;
-        bottom: 39px;
-        right: 137px;
+        bottom: 25px;
+        right: 130px;
     }
     .button1
     {

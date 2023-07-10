@@ -16,15 +16,15 @@
 }
 .head1
 {
-color: #ffffff;
-font-size: 2.2rem;
-font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    font-size: 2.2rem;
+    font-family: 'Poppins', sans-serif;
 }
 .head2
 {
-color: #f35a48;
-font-size: 2.2rem;
-font-family: 'Poppins', sans-serif;
+    color: #f35a48;
+    font-size: 2.2rem;
+    font-family: 'Poppins', sans-serif;
 }
 nav
 {
@@ -100,6 +100,59 @@ nav ul li a:hover::after
     transform: scale(0.8);
 }
 
+@media all and (max-width:600px)
+{
+    nav
+    {
+        display: flex;
+        flex-direction: column;
+        background-color: #3d3d38;
+        margin-left: 7.5%;
+        height: 450px;
+        width: 85%;
+    }
+    nav ul
+    {
+        display: flex;
+        flex-direction: column;
+        line-height: 55px;
+        margin-right: 600px;
+    }
+    .head1
+    {
+       position: relative;
+       left: -195px;
+       top: 25px;
+    }
+    .head2
+    {
+        position: relative;
+        bottom: 25px;
+        right: 130px;
+    }
+    .button1
+    {
+        position: relative;
+        bottom: 400px;
+        left: 40px;
+    }
+    nav ul li a::after
+    {
+        content: "";
+        width:0%;
+        height: 2px;
+        position: absolute;
+        background: red;
+        left: 0px;
+        bottom: 5px;
+        transition: 1s;
+    }
+    nav ul li a:hover::after
+    {
+    width:100%;
+    }
+}
+
 
 /*--------------home---------------*/
 
@@ -161,6 +214,41 @@ a
     font-family: 'Poppins', sans-serif;
     font-weight: normal;
     color: #c0cfc4;
+}
+
+
+@media all and (max-width:600px)
+{
+    .home
+    {
+        height: 900px;
+        width: 100%;
+        background-image: url("../images/img1.jpg");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    .overlay
+    {
+        height: 100%;
+        width: 100%;
+        background-color: #000;
+        opacity: 0.5;
+    }
+    .heading1
+    {
+        color: #fff;
+        font-size: 3rem;
+        font-family: 'Quando', serif;
+        position: relative;
+        bottom: 300px;
+        margin-left: 180px;
+    }
+    .back
+    {
+        position: relative;
+        bottom: 280px;
+        margin-left: 175px;
+    }
 }
 
 
@@ -247,7 +335,48 @@ a
     cursor: pointer;
     color: orange;
 }
-
+@media all and (max-width:600px)
+{
+    #section1
+    {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+    .container
+    {
+        margin-top: 50px;
+        width: 100%;
+    }
+    .container img
+    {
+        height: 400px;
+        width: 420px;
+        margin-left: 0px;
+    }
+    .container a img
+    {
+        position: relative;
+        bottom: 420px;
+        height: 75px;
+        width: 75px;
+    }
+    .container1
+    {
+        height: 450px;
+        width: 90%;
+        margin-left: 25px;
+        margin-top: 10px;
+        text-align: justify;
+    }
+    .container1 h1
+    {
+        font-size: 2.2rem;
+        font-weight: bold;
+        text-align: center;
+        font-family: 'Shrikhand', cursive;
+    }
+}
 
 /*-----------------calculations-------------*/
 
@@ -256,52 +385,65 @@ a
     background-image: linear-gradient(90deg,#ec4356,#f57135,#f08e1f);
     margin-top: 100px;
     height: 330px;
+    display: flex;
     width: 80%;
     margin-left: 10%;
 }
 .cal1
 {
     display: flex;
-    flex-direction: row;
-    margin-left: -170px;
-}
-.cal1 h1
-{
-    margin-top: 50px;
-    padding-left: 250px;
-    color: #fff;
-    font-size: 5.2rem;
+    flex-direction: column;
 }
 .cal2
 {
     display: flex;
-    flex-direction: row;
-    margin-left: -150px;
-}
-.cal2 h6
-{
-    font-size: 18px;
-    font-family: 'Poppins', sans-serif;
-    padding-left: 230px;
-    color: #fff;
+    flex-direction: column;
 }
 .cal3
 {
-    margin-top: 20px;
-    margin-left: 70px;
+    display: flex;
+    flex-direction: column;
 }
-.cal3 h1
+.cal4
 {
+    position: relative;
+    top: 120px;
+    right: 840px;
+}
+#calculation h1
+{
+    margin-top: 30px;
+    padding-left: 150px;
     color: #fff;
     font-size: 5.2rem;
 }
-.cal3 h6
+#calculation h6
 {
-    color: #fff;
     font-size: 18px;
     font-family: 'Poppins', sans-serif;
+    padding-left: 150px;
+    color: #fff;
 }
-
+@media all and (max-width:600px)
+{
+    #calculation
+    {
+        background-image: linear-gradient(90deg,#ec4356,#f57135,#f08e1f);
+        margin-top: 100px;
+        height: 650px;
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin-left: 5%;
+    }
+    .cal4
+    {
+        position: relative;
+        top: 10px;
+        right: 0px;
+    }
+    
+}
 
 /*---------gym award---------*/
 
@@ -342,6 +484,29 @@ a
     cursor: pointer;
     transform: scale(0.95);
 }
+@media all and (max-width:600px)
+{
+    .gym_award
+    {
+        margin-top: 100px;
+        height: 700px;
+        width: 85%;
+        margin-left: 7.55%;
+        display: flex;
+        flex-direction: column;
+    }
+    .award1
+    {
+        height: 400px;
+        width: 100%;
+    }
+    .award2 img
+    {
+        height: 275px;
+        width: 100%;
+    }
+}
+
 
 /*--------get training--------*/
 
@@ -423,7 +588,37 @@ a
     position: relative;
     bottom: 550px;
 }
-
+@media all and (max-width:600px)
+{
+    .get_training
+    {
+        height: 600px;
+    }
+    .training1
+    {
+        position: relative;
+        bottom: 570px;
+        width: 100%;
+        float: left;
+    }
+    .training1 h1
+    {
+        color: #fff;
+        font-size: 2.3rem;
+        margin-left: 20px;
+    }
+    .training1 p
+    {
+        color: #fff;
+        margin-top: 30px;
+        margin-left: 20px;
+        font-size: 1.3rem;
+    }
+    .training1 button
+    {
+        margin-left: 20px;
+    }
+}
 
 
 /*-----------------sessions--------------*/
@@ -432,7 +627,6 @@ a
 
 #session
 {
-    clear: both;
     position: relative;
     bottom: 125px;
     display: flex;
@@ -519,7 +713,27 @@ a
 {
     color: black;
 }
-
+@media all and (max-width:600px)
+{
+    #session
+    {
+        position: relative;
+        bottom: 125px;
+        display: flex;
+        flex-direction: column;
+        margin-left: 0%;
+        height: 1000px;
+        width: 100%;
+    }
+    .session_img
+    {
+        width: 100%;
+    }
+    .session_img1
+    {
+        width: 100%;
+    }
+}
 
 /*-----------footer--------------*/
 
@@ -663,4 +877,113 @@ a
     background-color: #f2d116;
     transform: scale(0.9);
     border-radius: 30px;
+}
+@media all and (max-width:600px)
+{
+#main_footer
+{
+    height: 1300px;
+    width: 100%;
+    background-color: black;
+}
+.foot_contact
+{
+    margin-top: 0px;
+    width: 100%;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+}
+.contact1
+{
+    margin-top: -20px;
+    width: 100%;
+    height: 170px;
+}
+.foot_contact h3
+{
+    color: #fff;
+    font-size: 20px;
+    font-weight: normal;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 20px;
+}
+.foot_contact h4
+{
+    margin-left: 20px;
+    margin-top: 60px;
+    font-family: 'Poppins', sans-serif;
+    color: red;
+    font-size: 18px;
+}
+.foot_img
+{
+    margin-top: -40px;
+}
+.foot_img img
+{
+    height: 300px;
+    width: 95%;
+    margin-left: 2.5%;
+}
+.foot_img h2
+{
+    position: relative;
+    bottom: 260px;
+    margin-left: 60px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem;
+}
+.foot_img h5
+{
+    position: relative;
+    bottom: 250px;
+    margin-left: 60px;
+    font-size: 1.1rem;
+    font-family: 'Poppins', sans-serif;
+}
+.foot_mail
+{
+    position: relative;
+    bottom: 190px;
+    margin-left: 60px;
+}
+.footer_last p
+{
+    color: #fff;
+    margin-left: 0px;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 18px;
+}
+.footer_last
+{
+    position: relative;
+    bottom: 40px;
+    display: flex;
+    flex-direction: column;
+}
+.footer_last h5 a
+{
+    color: #fff;
+    font-size: 20px;
+    align-items: center;
+    /*margin-left: 50px;*/
+    line-height: 80px;
+}
+.footer_last1
+{
+    margin-left: 50px;
+    margin-top: 80px;
+    
+}
+.footer_last1 a
+{
+    padding-left: 25px;
+}
+.footer_media
+{
+    display: flex;
+    flex-direction: row;
+}
 }
